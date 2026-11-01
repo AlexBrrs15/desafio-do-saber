@@ -9,8 +9,11 @@ if (conteudo) {
     document.getElementById("descricao").textContent = conteudo.descricao;
     document.getElementById("exemplo").textContent = conteudo.exemplo;
     document.getElementById("explicacao").textContent = conteudo.explicacao;
+    document.getElementById("iniciar-desafio").href =
+    `quiz.html?id=${id}`;
 } else {
     document.getElementById("titulo").textContent = "Conteúdo não encontrado";
     document.getElementById("descricao").textContent =
         "Volte para Matemática e escolha uma lição disponível.";
+    document.getElementById("iniciar-desafio").hidden = true;
 }
