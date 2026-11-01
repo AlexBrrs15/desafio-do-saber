@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background-color: #f8fafc;
+    line-height: 1.6;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 8%;
+    background-color: #ffffff;
+}
+
+.logo {
+    color: #3252e2;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #374151;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #3252e2;
+}
+
+.apresentacao {
+    padding: 90px 8%;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.apresentacao-conteudo {
+    max-width: 700px;
+}
+
+.destaque {
+    color: #3252e2;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 12px 0;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+}
+
+.apresentacao-conteudo > p:not(.destaque) {
+    margin-bottom: 25px;
+}
+
+.botao,
+.card button {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color:#3252e2;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao:hover,
+.card button:hover {
+    background-color:#030b31;
+}
+
+.disciplinas,
+.sobre {
+    padding: 60px 8%;
+}
+
+.disciplinas h2,
+.sobre h2 {
+    margin-bottom: 10px;
+}
+
+.grade-disciplinas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card {
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.sobre {
+    background-color: #ffffff;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color:#3252e2;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grade-disciplinas {
+        grid-template-columns: 1fr;
+    }
+
+    .apresentacao {
+        padding: 60px 6%;
+    }
+
+    .disciplinas,
+    .sobre {
+        padding: 40px 6%;
+    }
+}

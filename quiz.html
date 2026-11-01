@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Desafio do Saber</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a href="index.html" class="logo">Desafio do Saber</a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="matematica.html">Matemática</a>
+        </nav>
+    </header>
+
+    <main class="disciplinas">
+        <h1>Desafio de Matemática</h1>
+
+        <section class="card">
+            <p id="progresso">Pergunta 1</p>
+
+            <h2 id="enunciado">Carregando pergunta...</h2>
+
+            <div id="alternativas"></div>
+
+            <p id="feedback" aria-live="polite"></p>
+
+            <button id="proximo" type="button" hidden>
+                Próxima pergunta
+            </button>
+
+            <h2 id="resultado" hidden></h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desafio do Saber — Aprender pode ser divertido!</p>
+    </footer>
+
+    <script src="js/perguntas.js"></script>
+    <script src="js/quiz.js"></script>
+
+</body>
+</html>
